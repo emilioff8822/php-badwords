@@ -17,11 +17,35 @@ $paragrafo_censurato = str_replace( $parola, '***', $paragrafo);
   <title>Atterraggio</title>
 </head>
 <body>
+<div class="container">
+<p>Paragrafo Originale: <?php echo $paragrafo; ?></p>  <br>
+ <p> Lunghezza Paragrafo Originale: <?php echo strlen($paragrafo); ?></p>  <br>
 
- <p>Paragrafo Originale: <?php echo $paragrafo; ?></p> 
- <p> Lunghezza Paragrafo Originale: <?php echo strlen($paragrafo); ?></p> 
+ <p>Paragrafo censurato: <?php echo $paragrafo_censurato; ?> </p> <br>
+ <p> Lunghezza Paragrafo censurato: <?php echo strlen($paragrafo_censurato); ?> </p> <br>
+</div>
 
- <p>Paragrafo censurato: <?php echo $paragrafo_censurato; ?> </p>
- <p> Lunghezza Paragrafo censurato: <?php echo strlen($paragrafo_censurato); ?> </p>
 </body>
+
+<style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #f5f5f5;
+      font-family: Arial, sans-serif;
+    }
+    .container {
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 5px;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.1);
+      width: 500px;
+    }
+    p {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+  </style>
 </html>
