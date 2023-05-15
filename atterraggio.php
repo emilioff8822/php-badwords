@@ -18,7 +18,6 @@ $paragrafo_censurato = str_replace( $parola, '***', $paragrafo);
 </head>
 <body>
 
-<h1>ciao</h1>
  <p>Paragrafo Originale: <?php echo $paragrafo; ?></p> 
  <p> Lunghezza Paragrafo Originale: <?php echo strlen($paragrafo); ?></p> 
 
